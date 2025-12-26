@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ShanGo - Menu</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .card {
+      background-color: #25698d;
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .card-body .text-primary {
+      color: #cda45e !important;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+      .order-now-btn {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: var(--accent-color);
+    display: inline-flex;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    animation: pulse 2s infinite;
+    transition: all 0.4s;
+  }
+  .order-now-btn:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, #cda45e, transparent 20%) 0%, color-mix(in srgb, #d4af6a, transparent 20%) 100%);
+    box-shadow: 0 12px 35px rgba(205, 164, 94, 0.6);
+    animation: none;
+  }
+  .order-now-btn span {
+    position: relative;
+    z-index: 1;
+  }
+  .motorbike-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 0;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+    }
+    50% {
+      box-shadow: 0 8px 35px rgba(205, 164, 94, 0.7);
+      transform: translateY(-50%) scale(1.02);
+    }
+    100% {
+      box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+    }
+  }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html">
+            <img src="shango logo.jpg" alt="" style="width: 100px; height: auto; border-radius: 20px;">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-book-a-table d-none d-xl-block" href="https://wolt.com/en/alb/tirana/restaurant/shango1?srsltid=AfmBOopsSwJc9-j0j1TK9HzS-hOUrtsyuRvO9MDogH11Lhpmn-90Pab4">Order Now</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title position-relative" data-aos="fade" style="background-image: url(https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200);">
+      <div class="container position-relative">
+        <h1>Our Crêpe Menu<br></h1>
+        <p>Discover our selection of authentic French crêpes, made fresh daily with the finest ingredients.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Menu</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Sweet Crepes Section -->
+    <section id="sweet-crepes" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sweet Crêpes</h2>
+        <p>Indulge in our delightful sweet creations<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=800" class="card-img-top" alt="Nutella Paradise Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Nutella Paradise</h3>
+                <p class="card-text">Rich Nutella spread with fresh sliced bananas, topped with whipped cream and crushed hazelnuts</p>
+                <p class="text-primary fw-bold fs-5">$9.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800" class="card-img-top" alt="Berry Delight Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Berry Delight</h3>
+                <p class="card-text">Fresh strawberries, blueberries, and raspberries with vanilla cream, dusted with powdered sugar</p>
+                <p class="text-primary fw-bold fs-5">$10.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800" class="card-img-top" alt="Caramel Apple Dream Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Caramel Apple Dream</h3>
+                <p class="card-text">Warm caramelized apples with cinnamon, drizzled with salted caramel sauce and vanilla ice cream</p>
+                <p class="text-primary fw-bold fs-5">$11.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800" class="card-img-top" alt="Classic Lemon Sugar Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Classic Lemon Sugar</h3>
+                <p class="card-text">Traditional French crêpe with fresh lemon juice and a sprinkle of fine sugar</p>
+                <p class="text-primary fw-bold fs-5">$8.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800" class="card-img-top" alt="Chocolate Heaven Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Chocolate Heaven</h3>
+                <p class="card-text">Dark chocolate sauce with white chocolate chips, fresh strawberries, and chocolate shavings</p>
+                <p class="text-primary fw-bold fs-5">$10.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" class="card-img-top" alt="Maple Pecan Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Maple Pecan</h3>
+                <p class="card-text">Roasted pecans with pure maple syrup, butter, and a dollop of mascarpone cream</p>
+                <p class="text-primary fw-bold fs-5">$9.75</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" class="card-img-top" alt="S'mores Crepe">
+              <div class="card-body">
+                <h3 class="card-title">S'mores</h3>
+                <p class="card-text">Melted marshmallows, chocolate chunks, graham cracker crumbs, and chocolate drizzle</p>
+                <p class="text-primary fw-bold fs-5">$10.25</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1567610455147-37c3f7653c54?w=800" class="card-img-top" alt="Tiramisu Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Tiramisu</h3>
+                <p class="card-text">Espresso-soaked crepe with mascarpone cream, cocoa powder, and coffee liqueur drizzle</p>
+                <p class="text-primary fw-bold fs-5">$11.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" class="card-img-top" alt="Peach Melba Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Peach Melba</h3>
+                <p class="card-text">Grilled peaches, raspberry coulis, vanilla ice cream, and toasted almonds</p>
+                <p class="text-primary fw-bold fs-5">$10.75</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1571877234498-1a2392a76ff9?w=800" class="card-img-top" alt="Coconut Dream Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Coconut Dream</h3>
+                <p class="card-text">Sweetened coconut flakes, pineapple chunks, white chocolate sauce, and whipped cream</p>
+                <p class="text-primary fw-bold fs-5">$9.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=800" class="card-img-top" alt="Cherry Amaretto Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Cherry Amaretto</h3>
+                <p class="card-text">Dark cherries in amaretto syrup, almond cream, and crushed amaretti cookies</p>
+                <p class="text-primary fw-bold fs-5">$11.25</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=800" class="card-img-top" alt="Honey Lavender Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Honey Lavender</h3>
+                <p class="card-text">Lavender-infused honey, fresh cream cheese, candied lavender, and lemon zest</p>
+                <p class="text-primary fw-bold fs-5">$10.50</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Sweet Crepes Section -->
+
+    <!-- Savory Crepes Section -->
+    <section id="savory-crepes" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Savory Crêpes</h2>
+        <p>Discover our gourmet savory selections<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1619365584744-10ef00c6cc5b?w=800" class="card-img-top" alt="Smoked Salmon Elegance Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Smoked Salmon Elegance</h3>
+                <p class="card-text">Premium smoked salmon with cream cheese, capers, red onions, and fresh dill</p>
+                <p class="text-primary fw-bold fs-5">$13.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800" class="card-img-top" alt="Ham & Gruyère Classic Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Ham & Gruyère Classic</h3>
+                <p class="card-text">Black forest ham with melted Gruyère cheese, topped with a sunny-side-up egg</p>
+                <p class="text-primary fw-bold fs-5">$12.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?w=800" class="card-img-top" alt="Mushroom Truffle Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Mushroom Truffle</h3>
+                <p class="card-text">Sautéed wild mushrooms in truffle cream sauce with fresh thyme and Parmesan</p>
+                <p class="text-primary fw-bold fs-5">$11.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1604908815520-1866b6dc5ba8?w=800" class="card-img-top" alt="Mediterranean Garden Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Mediterranean Garden</h3>
+                <p class="card-text">Spinach, feta cheese, sun-dried tomatoes, olives, and pesto with balsamic glaze</p>
+                <p class="text-primary fw-bold fs-5">$13.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=800" class="card-img-top" alt="Chicken & Pesto Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Chicken & Pesto</h3>
+                <p class="card-text">Grilled chicken, basil pesto, mozzarella, sun-dried tomatoes, and fresh arugula</p>
+                <p class="text-primary fw-bold fs-5">$12.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800" class="card-img-top" alt="Bacon Brie Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Bacon Brie</h3>
+                <p class="card-text">Crispy bacon, creamy brie cheese, caramelized apples, and honey drizzle</p>
+                <p class="text-primary fw-bold fs-5">$11.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800" class="card-img-top" alt="Ratatouille Provençale Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Ratatouille Provençale</h3>
+                <p class="card-text">Roasted eggplant, zucchini, bell peppers, tomatoes, garlic, and herbes de Provence</p>
+                <p class="text-primary fw-bold fs-5">$10.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" class="card-img-top" alt="Duck Confit Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Duck Confit</h3>
+                <p class="card-text">Tender duck confit, caramelized onions, goat cheese, and orange reduction</p>
+                <p class="text-primary fw-bold fs-5">$14.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" class="card-img-top" alt="Caprese Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Caprese</h3>
+                <p class="card-text">Fresh mozzarella, tomatoes, basil pesto, balsamic reduction, and extra virgin olive oil</p>
+                <p class="text-primary fw-bold fs-5">$11.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1568906928542-4d8d82ee0b1e?w=800" class="card-img-top" alt="Prosciutto Arugula Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Prosciutto Arugula</h3>
+                <p class="card-text">Italian prosciutto, fresh arugula, shaved Parmesan, cherry tomatoes, and lemon oil</p>
+                <p class="text-primary fw-bold fs-5">$13.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" class="card-img-top" alt="Smoked Turkey Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Smoked Turkey</h3>
+                <p class="card-text">Smoked turkey, Swiss cheese, avocado, lettuce, tomato, and Dijon mustard</p>
+                <p class="text-primary fw-bold fs-5">$12.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" class="card-img-top" alt="Steak & Blue Cheese Crepe">
+              <div class="card-body">
+                <h3 class="card-title">Steak & Blue Cheese</h3>
+                <p class="card-text">Grilled steak strips, blue cheese crumbles, caramelized onions, and horseradish cream</p>
+                <p class="text-primary fw-bold fs-5">$14.00</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Savory Crepes Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ShanGo</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Rr. Vath Koreshi, prane Shkolles se Baletit</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/shangoofficial?igsh=MTV6NTJoMHVwMjN1Yg%3D%3D" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-links">
+          <h4>Our Crepes</h4>
+          <ul>
+            <li><a href="#">Sweet Crepes</a></li>
+            <li><a href="#">Salty Crepes</a></li>
+            <li><a href="#">Lidia</a></li>
+            <li><a href="#">Nutella</a></li>
+            <li><a href="#">Strawberry</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <a style="color: black;" href="https://quolytech.com">QuolyTech</a> <span>All Rights Reserved</span></p>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Order Now Button -->
+  <a href="https://wolt.com/en/alb/tirana/restaurant/shango1?srsltid=AfmBOopsSwJc9-j0j1TK9HzS-hOUrtsyuRvO9MDogH11Lhpmn-90Pab4" target="_blank" rel="noopener noreferrer">
+    <button class="order-now-btn">
+    <i class="fa-solid fa-motorcycle"></i>
+    </button>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
