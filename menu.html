@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>ShanGo - Menu</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>ShanGo - Menyja</title>
+  <meta name="description" content="Menyja e plotë e ShanGo - Krepa të shijshme në Tiranë">
+  <meta name="keywords" content="krepa, ShanGo, meny, Tiranë, mini pancakes">
 
   <!-- Favicons -->
   <link href="shango logo.jpg" rel="icon">
@@ -26,6 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     .card {
@@ -65,52 +67,52 @@
       object-fit: cover;
     }
 
-      .order-now-btn {
-    position: fixed;
-    visibility: visible;
-    opacity: 1;
-    right: 15px;
-    bottom: 15px;
-    z-index: 99999;
-    background: var(--accent-color);
-    display: inline-flex;
-    padding: 20px;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    border: none;
-    animation: pulse 2s infinite;
-    transition: all 0.4s;
-  }
-  .order-now-btn:hover {
-    background: linear-gradient(135deg, color-mix(in srgb, #cda45e, transparent 20%) 0%, color-mix(in srgb, #d4af6a, transparent 20%) 100%);
-    box-shadow: 0 12px 35px rgba(205, 164, 94, 0.6);
-    animation: none;
-  }
-  .order-now-btn span {
-    position: relative;
-    z-index: 1;
-  }
-  .motorbike-icon {
-    position: relative;
-    z-index: 1;
-    font-size: 1.5rem;
-    line-height: 0;
-  }
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+    .order-now-btn {
+      position: fixed;
+      visibility: visible;
+      opacity: 1;
+      right: 15px;
+      bottom: 15px;
+      z-index: 99999;
+      background: var(--accent-color);
+      display: inline-flex;
+      padding: 20px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      border: none;
+      animation: pulse 2s infinite;
+      transition: all 0.4s;
     }
-    50% {
-      box-shadow: 0 8px 35px rgba(205, 164, 94, 0.7);
-      transform: translateY(-50%) scale(1.02);
+    .order-now-btn:hover {
+      background: linear-gradient(135deg, color-mix(in srgb, #cda45e, transparent 20%) 0%, color-mix(in srgb, #d4af6a, transparent 20%) 100%);
+      box-shadow: 0 12px 35px rgba(205, 164, 94, 0.6);
+      animation: none;
     }
-    100% {
-      box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+    .order-now-btn span {
+      position: relative;
+      z-index: 1;
     }
-  }
+    .motorbike-icon {
+      position: relative;
+      z-index: 1;
+      font-size: 1.5rem;
+      line-height: 0;
+    }
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+      }
+      50% {
+        box-shadow: 0 8px 35px rgba(205, 164, 94, 0.7);
+        transform: translateY(-50%) scale(1.02);
+      }
+      100% {
+        box-shadow: 0 8px 25px rgba(205, 164, 94, 0.4);
+      }
+    }
   </style>
 </head>
 
@@ -127,14 +129,14 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="#specials">Specials</a></li>
+            <li><a href="index.html#about">Rreth Nesh</a></li>
+            <li><a href="menu.html" class="active">Menyja</a></li>
+            <li><a href="index.html#specials">Speciale</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-book-a-table d-none d-xl-block" href="https://wolt.com/en/alb/tirana/restaurant/shango1?srsltid=AfmBOopsSwJc9-j0j1TK9HzS-hOUrtsyuRvO9MDogH11Lhpmn-90Pab4">Order Now</a>
+        <a class="btn-book-a-table d-none d-xl-block" href="https://wolt.com/en/alb/tirana/restaurant/shango1?srsltid=AfmBOopsSwJc9-j0j1TK9HzS-hOUrtsyuRvO9MDogH11Lhpmn-90Pab4">Porosit Tani</a>
 
       </div>
 
@@ -145,26 +147,26 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title position-relative" data-aos="fade" style="background-image: url(https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200);">
+    <div class="page-title position-relative" data-aos="fade" style="background-image: url(https://cafecrepe.com/wp-content/uploads/2018/07/20180515_1679.jpg);">
       <div class="container position-relative">
-        <h1>Our Crêpe Menu<br></h1>
-        <p>Discover our selection of authentic French crêpes, made fresh daily with the finest ingredients.</p>
+        <h1>Menyja Jonë e Krepave<br></h1>
+        <p>Zbuloni përzgjedhjen tonë të krepave të përgatitura çdo ditë me përbërësit më të mirë.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Menu</li>
+            <li><a href="index.html">Kreu</a></li>
+            <li class="current">Menyja</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Sweet Crepes Section -->
-    <section id="sweet-crepes" class="starter-section section">
+    <!-- Më i Porositurat Section -->
+    <section id="popular" class="starter-section section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Sweet Crêpes</h2>
-        <p>Indulge in our delightful sweet creations<br></p>
+        <h2>Më të Porositurat</h2>
+        <p>Krepa tona më të dashura nga klientët<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
@@ -172,132 +174,33 @@
           
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=800" class="card-img-top" alt="Nutella Paradise Crepe">
+              <img src="https://imageproxy.wolt.com/assets/689da2ec39adb1f40a6ad826?w=960" class="card-img-top" alt="Biscoff Bliss">
               <div class="card-body">
-                <h3 class="card-title">Nutella Paradise</h3>
-                <p class="card-text">Rich Nutella spread with fresh sliced bananas, topped with whipped cream and crushed hazelnuts</p>
-                <p class="text-primary fw-bold fs-5">$9.50</p>
+                <h3 class="card-title">Biscoff Bliss</h3>
+                <p class="card-text">Krem lotus, çokollatë e bardhë, biskotë lotus</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800" class="card-img-top" alt="Berry Delight Crepe">
+              <img src="https://imageproxy.wolt.com/assets/689da2eb39adb1f40a6ad822?w=960" class="card-img-top" alt="Green Fantasy">
               <div class="card-body">
-                <h3 class="card-title">Berry Delight</h3>
-                <p class="card-text">Fresh strawberries, blueberries, and raspberries with vanilla cream, dusted with powdered sugar</p>
-                <p class="text-primary fw-bold fs-5">$10.50</p>
+                <h3 class="card-title">Green Fantasy</h3>
+                <p class="card-text">Krem pistako, çokollatë e bardhë, pistako</p>
+                <p class="text-primary fw-bold fs-5">590 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800" class="card-img-top" alt="Caramel Apple Dream Crepe">
+              <img src="https://imageproxy.wolt.com/assets/689f39993b13bfd3a588bc4e?w=960" class="card-img-top" alt="Berry Seduction">
               <div class="card-body">
-                <h3 class="card-title">Caramel Apple Dream</h3>
-                <p class="card-text">Warm caramelized apples with cinnamon, drizzled with salted caramel sauce and vanilla ice cream</p>
-                <p class="text-primary fw-bold fs-5">$11.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800" class="card-img-top" alt="Classic Lemon Sugar Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Classic Lemon Sugar</h3>
-                <p class="card-text">Traditional French crêpe with fresh lemon juice and a sprinkle of fine sugar</p>
-                <p class="text-primary fw-bold fs-5">$8.50</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800" class="card-img-top" alt="Chocolate Heaven Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Chocolate Heaven</h3>
-                <p class="card-text">Dark chocolate sauce with white chocolate chips, fresh strawberries, and chocolate shavings</p>
-                <p class="text-primary fw-bold fs-5">$10.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" class="card-img-top" alt="Maple Pecan Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Maple Pecan</h3>
-                <p class="card-text">Roasted pecans with pure maple syrup, butter, and a dollop of mascarpone cream</p>
-                <p class="text-primary fw-bold fs-5">$9.75</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" class="card-img-top" alt="S'mores Crepe">
-              <div class="card-body">
-                <h3 class="card-title">S'mores</h3>
-                <p class="card-text">Melted marshmallows, chocolate chunks, graham cracker crumbs, and chocolate drizzle</p>
-                <p class="text-primary fw-bold fs-5">$10.25</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1567610455147-37c3f7653c54?w=800" class="card-img-top" alt="Tiramisu Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Tiramisu</h3>
-                <p class="card-text">Espresso-soaked crepe with mascarpone cream, cocoa powder, and coffee liqueur drizzle</p>
-                <p class="text-primary fw-bold fs-5">$11.50</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800" class="card-img-top" alt="Peach Melba Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Peach Melba</h3>
-                <p class="card-text">Grilled peaches, raspberry coulis, vanilla ice cream, and toasted almonds</p>
-                <p class="text-primary fw-bold fs-5">$10.75</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1571877234498-1a2392a76ff9?w=800" class="card-img-top" alt="Coconut Dream Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Coconut Dream</h3>
-                <p class="card-text">Sweetened coconut flakes, pineapple chunks, white chocolate sauce, and whipped cream</p>
-                <p class="text-primary fw-bold fs-5">$9.50</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=800" class="card-img-top" alt="Cherry Amaretto Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Cherry Amaretto</h3>
-                <p class="card-text">Dark cherries in amaretto syrup, almond cream, and crushed amaretti cookies</p>
-                <p class="text-primary fw-bold fs-5">$11.25</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=800" class="card-img-top" alt="Honey Lavender Crepe">
-              <div class="card-body">
-                <h3 class="card-title">Honey Lavender</h3>
-                <p class="card-text">Lavender-infused honey, fresh cream cheese, candied lavender, and lemon zest</p>
-                <p class="text-primary fw-bold fs-5">$10.50</p>
+                <h3 class="card-title">Berry Seduction</h3>
+                <p class="card-text">Çokollatë, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
               </div>
             </div>
           </div>
@@ -305,15 +208,15 @@
         </div>
       </div>
 
-    </section><!-- /Sweet Crepes Section -->
+    </section><!-- /Më i Porositurat Section -->
 
-    <!-- Savory Crepes Section -->
-    <section id="savory-crepes" class="starter-section section">
+    <!-- Ardhje të Reja Section -->
+    <section id="new-arrivals" class="starter-section section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Savory Crêpes</h2>
-        <p>Discover our gourmet savory selections<br></p>
+        <h2>Ardhje të Reja</h2>
+        <p>Krepa të reja dhe ekskluzive<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
@@ -321,132 +224,176 @@
           
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1619365584744-10ef00c6cc5b?w=800" class="card-img-top" alt="Smoked Salmon Elegance Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef6c41fc392c8813ef7d0f?w=960" class="card-img-top" alt="Autumn Kiss">
               <div class="card-body">
-                <h3 class="card-title">Smoked Salmon Elegance</h3>
-                <p class="card-text">Premium smoked salmon with cream cheese, capers, red onions, and fresh dill</p>
-                <p class="text-primary fw-bold fs-5">$13.50</p>
+                <h3 class="card-title">Autumn Kiss</h3>
+                <p class="card-text">Karamel, sheqer pluhur, kanellë</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800" class="card-img-top" alt="Ham & Gruyère Classic Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef708ded43a57f700f0d17?w=960" class="card-img-top" alt="Caramel Crush">
               <div class="card-body">
-                <h3 class="card-title">Ham & Gruyère Classic</h3>
-                <p class="card-text">Black forest ham with melted Gruyère cheese, topped with a sunny-side-up egg</p>
-                <p class="text-primary fw-bold fs-5">$12.00</p>
+                <h3 class="card-title">Caramel Crush</h3>
+                <p class="card-text">Karamel, nutella, biskotë lotus</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?w=800" class="card-img-top" alt="Mushroom Truffle Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef722717e84051d222f4b7?w=960" class="card-img-top" alt="Cherry Affair">
               <div class="card-body">
-                <h3 class="card-title">Mushroom Truffle</h3>
-                <p class="card-text">Sautéed wild mushrooms in truffle cream sauce with fresh thyme and Parmesan</p>
-                <p class="text-primary fw-bold fs-5">$11.50</p>
+                <h3 class="card-title">Cherry Affair</h3>
+                <p class="card-text">Çokollatë e zezë, krem qershie, copëza çokollatë</p>
+                <p class="text-primary fw-bold fs-5">590 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1604908815520-1866b6dc5ba8?w=800" class="card-img-top" alt="Mediterranean Garden Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef777d17e84051d222f75c?w=960" class="card-img-top" alt="Dreamy Peach">
               <div class="card-body">
-                <h3 class="card-title">Mediterranean Garden</h3>
-                <p class="card-text">Spinach, feta cheese, sun-dried tomatoes, olives, and pesto with balsamic glaze</p>
-                <p class="text-primary fw-bold fs-5">$13.00</p>
+                <h3 class="card-title">Dreamy Peach</h3>
+                <p class="card-text">Çokollatë, krem pjeshke, biskotë lotus</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=800" class="card-img-top" alt="Chicken & Pesto Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef79f417e84051d222f875?w=960" class="card-img-top" alt="Sweet Romance">
               <div class="card-body">
-                <h3 class="card-title">Chicken & Pesto</h3>
-                <p class="card-text">Grilled chicken, basil pesto, mozzarella, sun-dried tomatoes, and fresh arugula</p>
-                <p class="text-primary fw-bold fs-5">$12.50</p>
+                <h3 class="card-title">Sweet Romance</h3>
+                <p class="card-text">Çokollatë, krem luleshtrydhe, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800" class="card-img-top" alt="Bacon Brie Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef7b33fc392c8813ef83d8?w=960" class="card-img-top" alt="Berry Clouds">
               <div class="card-body">
-                <h3 class="card-title">Bacon Brie</h3>
-                <p class="card-text">Crispy bacon, creamy brie cheese, caramelized apples, and honey drizzle</p>
-                <p class="text-primary fw-bold fs-5">$11.00</p>
+                <h3 class="card-title">Berry Clouds</h3>
+                <p class="card-text">Çokollatë e bardhë, krem luleshtrydhe, biskotë oreo</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800" class="card-img-top" alt="Ratatouille Provençale Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef7bb9ed43a57f700f13d0?w=960" class="card-img-top" alt="Golden Bite">
               <div class="card-body">
-                <h3 class="card-title">Ratatouille Provençale</h3>
-                <p class="card-text">Roasted eggplant, zucchini, bell peppers, tomatoes, garlic, and herbes de Provence</p>
-                <p class="text-primary fw-bold fs-5">$10.50</p>
+                <h3 class="card-title">Golden Bite</h3>
+                <p class="card-text">Karamel, krem banane, biskotë oreo</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" class="card-img-top" alt="Duck Confit Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef7c8217e84051d222fa63?w=960" class="card-img-top" alt="Zesty Mood">
               <div class="card-body">
-                <h3 class="card-title">Duck Confit</h3>
-                <p class="card-text">Tender duck confit, caramelized onions, goat cheese, and orange reduction</p>
-                <p class="text-primary fw-bold fs-5">$14.50</p>
+                <h3 class="card-title">Zesty Mood</h3>
+                <p class="card-text">Çokollatë e zezë, krem mandarine, copëza çokollatë</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" class="card-img-top" alt="Caprese Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef7eeefc392c8813ef861f?w=960" class="card-img-top" alt="Wild Passion">
               <div class="card-body">
-                <h3 class="card-title">Caprese</h3>
-                <p class="card-text">Fresh mozzarella, tomatoes, basil pesto, balsamic reduction, and extra virgin olive oil</p>
-                <p class="text-primary fw-bold fs-5">$11.00</p>
+                <h3 class="card-title">Wild Passion</h3>
+                <p class="card-text">Çokollatë, krem fruti i pasionit, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1568906928542-4d8d82ee0b1e?w=800" class="card-img-top" alt="Prosciutto Arugula Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef9d8ffc392c8813ef9bd2?w=960" class="card-img-top" alt="Midnight Banana">
               <div class="card-body">
-                <h3 class="card-title">Prosciutto Arugula</h3>
-                <p class="card-text">Italian prosciutto, fresh arugula, shaved Parmesan, cherry tomatoes, and lemon oil</p>
-                <p class="text-primary fw-bold fs-5">$13.00</p>
+                <h3 class="card-title">Midnight Banana</h3>
+                <p class="card-text">Çokollatë e zezë, krem banane, karamel</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" class="card-img-top" alt="Smoked Turkey Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef9f1fed43a57f700f275d?w=960" class="card-img-top" alt="Tropical Paradise">
               <div class="card-body">
-                <h3 class="card-title">Smoked Turkey</h3>
-                <p class="card-text">Smoked turkey, Swiss cheese, avocado, lettuce, tomato, and Dijon mustard</p>
-                <p class="text-primary fw-bold fs-5">$12.00</p>
+                <h3 class="card-title">Tropical Paradise</h3>
+                <p class="card-text">Çokollatë e bardhë, krem ananasi, kokos flakes</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="card">
-              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" class="card-img-top" alt="Steak & Blue Cheese Crepe">
+              <img src="https://imageproxy.wolt.com/assets/68ef7e48fc392c8813ef8518?w=960" class="card-img-top" alt="Sunset Love">
               <div class="card-body">
-                <h3 class="card-title">Steak & Blue Cheese</h3>
-                <p class="card-text">Grilled steak strips, blue cheese crumbles, caramelized onions, and horseradish cream</p>
-                <p class="text-primary fw-bold fs-5">$14.00</p>
+                <h3 class="card-title">Sunset Love</h3>
+                <p class="card-text">Nutella, krem mangoje, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/68ef9fd7fc392c8813ef9cd1?w=960" class="card-img-top" alt="Pastel Dream">
+              <div class="card-body">
+                <h3 class="card-title">Pastel Dream</h3>
+                <p class="card-text">Sheqer pluhur, krem pastiçerie, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">590 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/68efa089fc392c8813ef9d28?w=960" class="card-img-top" alt="Heaven Stack">
+              <div class="card-body">
+                <h3 class="card-title">Heaven Stack</h3>
+                <p class="card-text">Nutella, krem pastiçerie, banane, luleshtrydhe, kanellë</p>
+                <p class="text-primary fw-bold fs-5">690 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/68efa13117e84051d22312bc?w=960" class="card-img-top" alt="Biscoff Twist">
+              <div class="card-body">
+                <h3 class="card-title">Biscoff Twist</h3>
+                <p class="card-text">Krem lotus, çokollatë e bardhë, biskotë lotus, banane, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/68efa3b117e84051d2231360?w=960" class="card-img-top" alt="Lotus Charm">
+              <div class="card-body">
+                <h3 class="card-title">Lotus Charm</h3>
+                <p class="card-text">Krem lotus, krem pastiçerie, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">650 Lekë</p>
               </div>
             </div>
           </div>
@@ -454,7 +401,206 @@
         </div>
       </div>
 
-    </section><!-- /Savory Crepes Section -->
+    </section><!-- /Ardhje të Reja Section -->
+
+    <!-- Mini Pancakes Section -->
+    <section id="mini-pancakes" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mini Pancakes</h2>
+        <p>Mini pancakes të buta dhe të shijshëm<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689f396b3b13bfd3a588bc47?w=960" class="card-img-top" alt="Snow Kissed">
+              <div class="card-body">
+                <h3 class="card-title">Snow Kissed</h3>
+                <p class="card-text">Sheqer pluhur</p>
+                <p class="text-primary fw-bold fs-5">350 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da32e39adb1f40a6ad848?w=960" class="card-img-top" alt="Choco Drip">
+              <div class="card-body">
+                <h3 class="card-title">Choco Drip</h3>
+                <p class="card-text">Çokollatë</p>
+                <p class="text-primary fw-bold fs-5">390 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/68a757bf72cf20388ef46801?w=960" class="card-img-top" alt="Banana Drama">
+              <div class="card-body">
+                <h3 class="card-title">Banana Drama</h3>
+                <p class="card-text">Çokollatë, banane</p>
+                <p class="text-primary fw-bold fs-5">420 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689f39993b13bfd3a588bc4e?w=960" class="card-img-top" alt="Oreo Spell">
+              <div class="card-body">
+                <h3 class="card-title">Oreo Spell</h3>
+                <p class="card-text">Çokollatë e bardhë, çokollatë e zezë, biskotë oreo</p>
+                <p class="text-primary fw-bold fs-5">450 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2eb39adb1f40a6ad822?w=960" class="card-img-top" alt="Daydream Bite">
+              <div class="card-body">
+                <h3 class="card-title">Daydream Bite</h3>
+                <p class="card-text">Çokollatë e bardhë, banane, arrë kokosi, kanellë</p>
+                <p class="text-primary fw-bold fs-5">450 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2ed39adb1f40a6ad82a?w=960" class="card-img-top" alt="Karamella">
+              <div class="card-body">
+                <h3 class="card-title">Karamella</h3>
+                <p class="card-text">Çokollatë e bardhë, karamel, banane</p>
+                <p class="text-primary fw-bold fs-5">450 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689f39993b13bfd3a588bc4e?w=960" class="card-img-top" alt="Berry Seduction">
+              <div class="card-body">
+                <h3 class="card-title">Berry Seduction</h3>
+                <p class="card-text">Çokollatë, luleshtrydhe</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2ec39adb1f40a6ad826?w=960" class="card-img-top" alt="Biscoff Bliss">
+              <div class="card-body">
+                <h3 class="card-title">Biscoff Bliss</h3>
+                <p class="card-text">Krem lotus, çokollatë e bardhë, biskotë lotus</p>
+                <p class="text-primary fw-bold fs-5">490 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2eb39adb1f40a6ad822?w=960" class="card-img-top" alt="Green Fantasy">
+              <div class="card-body">
+                <h3 class="card-title">Green Fantasy</h3>
+                <p class="card-text">Krem pistako, çokollatë e bardhë, pistako</p>
+                <p class="text-primary fw-bold fs-5">590 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Mini Pancakes Section -->
+
+    <!-- Ekstra Section -->
+    <section id="extras" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ekstra</h2>
+        <p>Shtoni më shumë shije në krepa tuaja<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f039adb1f40a6ad838?w=960" class="card-img-top" alt="Çokollatë e Zezë">
+              <div class="card-body">
+                <h3 class="card-title">Çokollatë e Zezë</h3>
+                <p class="card-text">Ekstra çokollatë e zezë</p>
+                <p class="text-primary fw-bold fs-5">80 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f039adb1f40a6ad836?w=960" class="card-img-top" alt="Çokollatë e Bardhë">
+              <div class="card-body">
+                <h3 class="card-title">Çokollatë e Bardhë</h3>
+                <p class="card-text">Ekstra çokollatë e bardhë</p>
+                <p class="text-primary fw-bold fs-5">80 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f139adb1f40a6ad83c?w=960" class="card-img-top" alt="Nutella">
+              <div class="card-body">
+                <h3 class="card-title">Nutella</h3>
+                <p class="card-text">Ekstra Nutella</p>
+                <p class="text-primary fw-bold fs-5">100 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f139adb1f40a6ad83e?w=960" class="card-img-top" alt="Krem Lotus">
+              <div class="card-body">
+                <h3 class="card-title">Krem Lotus</h3>
+                <p class="card-text">Ekstra krem lotus</p>
+                <p class="text-primary fw-bold fs-5">100 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f139adb1f40a6ad83d?w=960" class="card-img-top" alt="Karamel">
+              <div class="card-body">
+                <h3 class="card-title">Karamel</h3>
+                <p class="card-text">Ekstra karamel</p>
+                <p class="text-primary fw-bold fs-5">100 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="https://imageproxy.wolt.com/assets/689da2f139adb1f40a6ad83b?w=960" class="card-img-top" alt="Krem Pistakio">
+              <div class="card-body">
+                <h3 class="card-title">Krem Pistakio</h3>
+                <p class="card-text">Ekstra krem pistakio</p>
+                <p class="text-primary fw-bold fs-5">120 Lekë</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Ekstra Section -->
 
   </main>
 
@@ -467,7 +613,7 @@
             <span class="sitename">ShanGo</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Rr. Vath Koreshi, prane Shkolles se Baletit</p>
+            <p>Rr. Vath Koreshi, pranë Shkollës së Baletit</p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://www.instagram.com/shangoofficial?igsh=MTV6NTJoMHVwMjN1Yg%3D%3D" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
@@ -475,22 +621,21 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Lidhje të Dobishme</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="index.html">Kreu</a></li>
+            <li><a href="index.html#about">Rreth Nesh</a></li>
+            <li><a href="menu.html">Menyja</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-links">
-          <h4>Our Crepes</h4>
+          <h4>Krepa Tona</h4>
           <ul>
-            <li><a href="#">Sweet Crepes</a></li>
-            <li><a href="#">Salty Crepes</a></li>
-            <li><a href="#">Lidia</a></li>
-            <li><a href="#">Nutella</a></li>
-            <li><a href="#">Strawberry</a></li>
+            <li><a href="#popular">Më të Porositurat</a></li>
+            <li><a href="#new-arrivals">Ardhje të Reja</a></li>
+            <li><a href="#mini-pancakes">Mini Pancakes</a></li>
+            <li><a href="#extras">Ekstra</a></li>
           </ul>
         </div>
 
@@ -498,7 +643,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <a style="color: black;" href="https://quolytech.com">QuolyTech</a> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <a style="color: black;" href="https://quolytech.com">QuolyTech</a> <span>Të Gjitha të Drejtat e Rezervuara</span></p>
+    </div>
   </footer>
 
   <!-- Scroll Top -->
